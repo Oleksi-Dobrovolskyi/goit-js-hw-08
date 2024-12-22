@@ -66,7 +66,6 @@ const images = [
 
 const galleryContainer = document.querySelector('.gallery');
 
-// Створення розмітки галереї
 const galleryMarkup = images.map(({ preview, original, description }) => {
   return `
     <li class="gallery-item">
@@ -84,7 +83,6 @@ const galleryMarkup = images.map(({ preview, original, description }) => {
 
 galleryContainer.innerHTML = galleryMarkup;
 
-// Делегування подій
 galleryContainer.addEventListener('click', onGalleryClick);
 
 function onGalleryClick(event) {
